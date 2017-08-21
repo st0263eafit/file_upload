@@ -13,3 +13,14 @@
 
 >     user1@dca236$ sudo firewall-cmd --zone=public --add-port=3456/tcp --permanent
 >     user1@dca236$ sudo firewall-cmd --reload
+
+## Descargar y correr:
+
+* Descargue, instale dependenciaas y ejecute:
+
+>     user1@dca236$ cd apps
+>     user1@dca236$ git clone https://github.com/st0263eafit/file_upload.git
+>     user1@dca236$ cd file_upload
+>     user1@dca236$ npm install
+>     user1@dca236$ node server.js
+>     Working on port 3456
