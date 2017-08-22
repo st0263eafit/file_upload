@@ -20,10 +20,15 @@ app.get('/',function(req,res){
 app.post('/api/photo',function(req,res){
     upload(req,res,function(err) {
         if(err) {
+            console.log(err);
             return res.end("Error uploading file.");
         }
         res.end("File is uploaded");
     });
+});
+
+app.get('/api/photoinfo', function(req,res){
+  res.end("Photo Info Echo");
 });
 
 app.listen(3456,function(){

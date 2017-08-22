@@ -24,3 +24,11 @@
 >     user1@dca236$ npm install
 >     user1@dca236$ node server.js
 >     Working on port 3456
+
+* Ejecuta bajo pm2:
+
+>     user1@dca236$ pm2 start server.js --name "file_upload"
+
+Debe garantizar que las aplicaciones pm2 cuando reinicie la máquina ejecuta.
+
+>     user1@dca236$ pm2 startup systemd
